@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <form name="profile">
+      <h1>Profile Form</h1>
+      {{form-input name="name" type="text" label="Name" placeholder="Insert your name here"}}
+
+      {{form-input name="age" type="number" label="Age"}}
+
+      <label>Gender</label>
+      {{#form-input name="gender" type="checkbox" value="male"}}Male{{/form-input}}
+      {{#form-input name="gender" type="checkbox" value="female"}}Female{{/form-input}}
+
+      <label>Web Browser</label>
+      {{#form-input name="browser" type="radio" value="chrome"}}Chrome<br>{{/form-input}}
+      {{#form-input name="browser" type="radio" value="firefox"}}Firefox<br>{{/form-input}}
+      {{#form-input name="browser" type="radio" value="ie"}}Internet Explorer{{/form-input}}
+
+      {{form-input type="submit" value="Send"}}
+    </form>
+  </body>
+</html>
